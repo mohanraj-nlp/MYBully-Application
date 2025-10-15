@@ -1,9 +1,7 @@
 import joblib
 import numpy as np
-from transformers import AutoModel
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoModel, AutoTokenizer, AutoModelForSequenceClassification
 import torch
-import malaya
 
 # --- Load Models and Encoders ---
 emotion_tokenizer = AutoTokenizer.from_pretrained("mohanrj/mybully-emobert-manual")
